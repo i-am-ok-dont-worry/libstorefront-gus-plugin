@@ -6,7 +6,7 @@ import {
     CheckoutService,
     HttpStatus,
     IOCContainer,
-    LibstorefrontInnerState
+    LibstorefrontInnerState, PaymentDetails
 } from '@grupakmk/libstorefront';
 import { transformCorporateInfoToShippingData } from '../utils/transform-corporate-info';
 
@@ -17,7 +17,7 @@ export class GusInfoService {
      * Returns corporate info by taxvat nunber
      * @param taxvat
      */
-    public async getCorporateInfo (taxvat: string): Promise<CorporateInfo> {
+    public async getCorporateInfo (taxvat: string): Promise<CorporateInfo & PaymentDetails> {
         try {
             const response = await this.gusInfoDao.getCorporateInfo(taxvat);
             if (response && response.result && response.resultCode === HttpStatus.OK) {

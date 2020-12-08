@@ -1,6 +1,6 @@
 import { GusInfoDao } from '../dao';
 import { CorporateInfo } from '../types';
-import { AbstractStore, LibstorefrontInnerState } from '@grupakmk/libstorefront';
+import { AbstractStore, LibstorefrontInnerState, PaymentDetails } from '@grupakmk/libstorefront';
 export declare class GusInfoService {
     private gusInfoDao;
     private store;
@@ -8,6 +8,6 @@ export declare class GusInfoService {
      * Returns corporate info by taxvat nunber
      * @param taxvat
      */
-    getCorporateInfo(taxvat: string): Promise<CorporateInfo>;
+    getCorporateInfo(taxvat: string): Promise<CorporateInfo & PaymentDetails>;
     constructor(gusInfoDao: GusInfoDao, store: AbstractStore<LibstorefrontInnerState>);
 }
