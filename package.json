@@ -1,10 +1,11 @@
 {
   "name": "libstorefront-plugin-template",
   "version": "1.0.0",
-  "description": "Plugin template for Libstorefront",
+  "description": "Plugin for fetching corporate info from GUS API.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "test-integration": "webpack-dev-server --config tests/integration/webpack.test.js",
     "test": "jest --config jest.config.js --runInBand"
   },
   "repository": {
@@ -22,7 +23,7 @@
   },
   "homepage": "https://gitlab.com/mateuspytel/libstorefront-plugin-template#readme",
   "dependencies": {
-    "@grupakmk/libstorefront": "^1.0.4"
+    "@grupakmk/libstorefront": "^1.0.1"
   },
   "devDependencies": {
     "babel-loader": "^8.2.2",
@@ -32,8 +33,9 @@
     "ts-jest": "^26.4.4",
     "ts-loader": "^8.0.11",
     "typescript": "^4.1.2",
-    "webpack": "^4.44.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
     "webpack-node-externals": "^2.5.2"
   }
 }
