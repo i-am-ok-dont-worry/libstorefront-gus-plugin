@@ -203,6 +203,17 @@ exports.GusInfoPlugin = (function (libstorefront) {
 
 "use strict";
 
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -285,7 +296,7 @@ var GusInfoService = /** @class */ (function () {
                         return [4 /*yield*/, libstorefront_1.IOCContainer.get(libstorefront_1.CheckoutService).setPaymentDetails(mapped)];
                     case 3:
                         _a.sent();
-                        return [2 /*return*/, response.result[0]];
+                        return [2 /*return*/, __assign(__assign({}, response.result[0]), mapped)];
                     case 4: return [2 /*return*/, response.result.length === 0 ? null : response.result];
                     case 5: return [3 /*break*/, 7];
                     case 6:

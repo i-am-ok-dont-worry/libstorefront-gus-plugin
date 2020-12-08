@@ -26,7 +26,7 @@ export class GusInfoService {
                     const mapped = await transformCorporateInfoToShippingData(data);
                     await IOCContainer.get(CheckoutService).setPaymentDetails(mapped);
 
-                    return response.result[0];
+                    return { ...response.result[0], ...mapped };
                 }
                 else { return response.result.length === 0 ? null : response.result; }
             }
