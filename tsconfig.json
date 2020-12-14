@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "module": "commonjs",
     "esModuleInterop": true,
-    "target": "ES5",
+    "target": "es6",
     "declaration": true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
