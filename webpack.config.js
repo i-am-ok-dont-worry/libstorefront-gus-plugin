@@ -23,7 +23,7 @@ module.exports = {
     output: {
         filename: 'index.js',
         path: path.resolve(process.cwd(), 'dist'),
-        library: 'LSFPlugin',
+        library: 'GusInfoPlugin',
         libraryTarget: 'umd',
         globalObject: 'this',
         umdNamedDefine: true

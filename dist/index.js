@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("LSFPlugin", [], factory);
+		define("GusInfoPlugin", [], factory);
 	else if(typeof exports === 'object')
-		exports["LSFPlugin"] = factory();
+		exports["GusInfoPlugin"] = factory();
 	else
-		root["LSFPlugin"] = factory();
+		root["GusInfoPlugin"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -111,8 +111,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_dao_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/dao/index */ "./src/dao/index.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GusInfoDao", function() { return _src_dao_index__WEBPACK_IMPORTED_MODULE_1__["GusInfoDao"]; });
 
-/* harmony import */ var _src_service_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/service/index */ "./src/service/index.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GusInfoService", function() { return _src_service_index__WEBPACK_IMPORTED_MODULE_2__["GusInfoService"]; });
+/* harmony import */ var _src_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/service */ "./src/service/index.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GusInfoService", function() { return _src_service__WEBPACK_IMPORTED_MODULE_2__["GusInfoService"]; });
 
 
 
