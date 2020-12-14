@@ -17,7 +17,6 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "module": "dist/index.js",
   "author": "Pytel",
   "license": "ISC",
   "bugs": {
