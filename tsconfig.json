@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "commonjs",
-    "target": "es5",
+    "module": "es2015",
+    "target": "es2015",
     "esModuleInterop": true,
     "declaration": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "skipLibCheck": true,
     "typeRoots": ["src/types", "node_modules/@types"],
