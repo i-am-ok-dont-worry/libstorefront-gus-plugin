@@ -2,9 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "commonjs",
+    "target": "es5",
     "esModuleInterop": true,
-    "target": "ES6",
     "declaration": true,
+    "moduleResolution": "node",
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -22,7 +23,8 @@
       "reflect-metadata",
       "node",
       "jest"
-    ]
+    ],
+    "paths": { "@grupakmk/libstorefront-gus-plugin": ["./index.d.ts"] }
   },
   "include": [
     "src/**/*",
