@@ -2,7 +2,6 @@
   "name": "libstorefront-plugin-template",
   "version": "1.0.0",
   "description": "Plugin for fetching corporate info from GUS API.",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "test-integration": "webpack-dev-server --config tests/integration/webpack.test.js",
@@ -16,6 +15,8 @@
     "LSF",
     "plugin"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Pytel",
   "license": "ISC",
   "bugs": {
