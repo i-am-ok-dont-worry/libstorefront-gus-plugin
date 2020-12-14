@@ -1,5 +1,5 @@
 {
-  "name": "libstorefront-plugin-template",
+  "name": "libstorefront-gus-plugin",
   "version": "1.0.0",
   "description": "Plugin for fetching corporate info from GUS API.",
   "scripts": {
