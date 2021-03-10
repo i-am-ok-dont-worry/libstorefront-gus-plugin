@@ -28,7 +28,9 @@ export class GusInfoService {
 
                     return { ...response.result[0], ...mapped };
                 }
-                else { return response.result.length === 0 ? null : response.result; }
+                else {
+                    return response.result.length === 0 ? null : response.result;
+                }
             }
         } catch (e) {
             return null;
