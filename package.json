@@ -1,6 +1,6 @@
 {
   "name": "@grupakmk/libstorefront-gus-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for fetching corporate info from GUS API.",
   "scripts": {
     "build": "webpack --config webpack.config.js",
